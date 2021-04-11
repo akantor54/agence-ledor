@@ -1,0 +1,286 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* general */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+    color:#333;
+}
+
+h1,h2,h3,h4{
+    margin-bottom: 1rem;
+}
+
+p{
+    margin-bottom: 0.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.strong{
+    color:#ffee00;
+    font-weight: 400;
+}
+ul{
+    list-style: none;
+}
+
+/* class */
+.container{
+    display: block;
+    max-width: 1200px;
+    margin:auto;
+}
+
+.separator{
+    margin: 1rem auto;
+    background: #333;
+    width: 50px;
+    height: 2px;
+}
+.bg-dark{
+    background: #333;
+    color :white
+}
+/* vp + header */
+.vp-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.vp{
+    flex:auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/frame.jpg")center center/cover;
+}
+
+header{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 0 1px rgba(107, 106, 106, 0.623);
+    background-color: #333;
+}
+section{
+    flex :1;
+    width: 100%;
+}
+
+.vp-logo a{
+    
+    color : white;
+    font-size: 3rem;
+    font-family: 'Long Cang', cursive;
+}
+
+header i{
+    color: #ffee00;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.vp-logo{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+}
+header ul li{
+    padding: 1rem;
+}
+header ul li a:hover{
+    color:#ffee00;
+}
+
+/* vp content */
+.vp-content{
+    width: 700px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    
+    
+}
+
+.vp-content h1{
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.vp-content p {
+    font-size: 1.5rem;
+}
+
+/* offer */
+
+.offer{
+    padding: 10rem 1rem 10rem 1rem;
+}
+
+.offer-list{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.offer-elem{
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 1rem;
+    flex :1;
+}
+.offer-elem-img{
+    width: 100%;
+}
+
+.offer-elem-text{
+    padding: 2rem;
+    text-align: center;
+}
+
+/* who */
+
+.who{
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+.who-content-img{
+    flex: 1;
+}
+.who-content-img img{
+    width: 100%;
+}
+.who-content-text{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    padding: 4rem;
+}
+.who-content-text p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.who-content-text h2{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* testimanials */
+
+.testimanials{
+    padding: 5rem 1rem;
+}
+
+.testimanials-content{
+    display: flex;
+    flex-direction: column;
+}
+.testimanials-elem{
+    flex: 1;
+    background: white;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.testimanials-elem-profil{
+
+}
+
+.testimanials-elem-profil img{
+    width: 50px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+.testimanials-elem-profil p{
+    font-weight: 700;
+}
+
+.testimanials-elem-text{
+    padding: 0 2rem;
+}
+.testimanials-elem-text p i {
+    margin: 0.2rem;
+}
+
+/* contact */
+
+.contact{
+    padding: 10rem 1rem 10rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    align-items: center;
+}
+
+.contact-form{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form input{
+    background: #333;
+    border: 0;
+    border-bottom: 1px solid #555;
+    padding: 1rem;
+    font-size: 1.3rem;
+    outline: none;
+    color: white;
+}
+
+.contact-form button{
+    display: block;
+    border: 0;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    background:#ffee00;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 3rem auto;
+}
+
+.contact-form button:hover{
+    background-color: red;
+}
+
+footer{
+    background-color: #555;
+    padding:5rem 1rem 5rem 1rem;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
